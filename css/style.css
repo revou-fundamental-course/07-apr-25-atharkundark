@@ -1,3 +1,7 @@
+body{
+    font-family: monospace;
+}
+
 .logo-doang{
     width: 50px;
     height: 50px;
@@ -10,6 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 2px;
 }
 
 nav > a {
@@ -21,8 +26,97 @@ nav > a {
 }
 
 .bannerku{
-    height: 700px;
+    height: 550px;
     width: 99%;
     background-image: url(/assets/banner1.jpg);
     background-size: cover;
+    margin:20px 0;
+}
+
+hr{
+    border-width: 2px;
+    margin:5px;
+}
+
+h2{
+    margin:5px  30px;
+}
+
+#b1{
+    border: 2px solid;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+#profile-section > nav{
+    display: flex;
+    margin: 45px;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#h52{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.border1{
+    background-image: url(/assets/PhotoProfile.png);
+    background-size: cover;
+}
+.border2{
+    background-image: url(/assets/reading.jpg);
+    background-size: cover;
+}
+.border3{
+    background-image: url(/assets/studying.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.border4{
+    background-image: url(/assets/music.avif);
+    background-size: cover;
+    background-position: center;
+}
+.border5{
+    background-image: url(/assets/sleeping.jpg);
+    background-size: cover;
+}
+
+#home-section > article{
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 61px;
+}
+
+.photo-profile1{
+    width: 359px;
+    height: 600px;
+    border: 2px solid;
+    border-radius: 6%;
+    background-image: url(/assets/portofolioPFP.webp);
+    background-size: cover;
+    margin: 30px;
+}
+
+.container-portofolio{
+    height: 1128px;
+    width: 1500px;
+    border: 1px solid;
+    margin: 20px;
+    display: flex;
+}
+
+.teks-portofolio{
+    float:right;
+    margin:30px 0;
+}
+
+footer{
+    text-align: center;
 }

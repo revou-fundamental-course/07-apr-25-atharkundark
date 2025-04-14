@@ -31,7 +31,7 @@
         <section id="home-section">
 
             <header class="header2">
-                <h2>Selamat datang __, di website saya!</h2>
+                <h2>Selamat datang <span id="user-name">____</span> di website saya!</h2>
             </header>
 
             <!-- banner -->
@@ -126,13 +126,42 @@
 
         <hr/>
         <!-- Message us -->
-        <section id="message-section"></section>
+        <section id="message-section">
+            <form name="message-form" onsubmit="return validateform()"> 
+                <fieldset>
+                <legend>Message Us</legend>
+                    <p>
+                        <label for="namaku">Nama</label>
+                        <input type="text" placeholder="Nama Anda" name="namaku" required>
+                    <p>
+                        <label for="Tanggalku">Tanggal Lahir</label>
+                        <input type="date" name="Tanggalku"> 
+                    <p>
+                        <input type="radio" id="male" name="gender" value="male"/>
+                        <label for="male">Laki laki</label>
+                        <input type="radio" id="female" name="gender" value="female"/>
+                        <label for="female">Perempuan</label>
+                    <p>
+                        <label for="pesanku">Pesan</label>
+                        <textarea placeholder="pesan" name="messages"></textarea>
+                        <input type="submit" value="submit">
+                    <br/>
+                </fieldset>
+            </form>
+
+            <div class="sender-form1">
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-messages"></span></p>
+            </div>
+        </section>
 
     </main>
 
     <hr/>
 
     <footer>Made by Atharkun @2025</footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

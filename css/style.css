@@ -120,3 +120,42 @@ h2{
 footer{
     text-align: center;
 }
+
+fieldset{
+    width: 40%;
+    margin: 0 20px;
+    height: 329px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    display: flex;
+    height: 135px;
+    width: 337px;
+}
+
+fieldset > p{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#message-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sender-form1{
+    width: 40%;
+    border: 1px solid;
+    height: 337px;
+    margin-top: 6px;
+    margin-right: 20px;
+}
+
+.sender-form1 > p {
+    margin-left: 20px;
+    margin-top: 20px;
+}

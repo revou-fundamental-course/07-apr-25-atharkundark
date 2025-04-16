@@ -1,5 +1,5 @@
-// let nama = prompt("what is your name?", " ");
-// document.getElementById("user-wlc").innerHTML = nama;
+let nama = prompt("what is your name?", " ");
+document.getElementById("user-wlc").innerHTML = nama;
 
 // validasi form
 function ValidateForm(){

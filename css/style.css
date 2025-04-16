@@ -1,161 +1,127 @@
 body{
-    font-family: monospace;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: aliceblue;
+    color: black;
+    scroll-behavior: smooth;
 }
 
-.logo-doang{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: url(/assets/PhotoProfile.png);
-    background-size: cover;
-}
-
-header{
+/* untuk barnya */
+.header-main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2px;
+    background-color: rgba(0,0,0,0.05);
+    padding: 12px 35px;
+    color: white;
+    top: 0;
+    z-index: 999;
 }
 
-nav > a {
-    border: 1px solid black;
-    text-decoration: none;
-    color: black;
-    padding: 6px 30px;
-    border-radius: 5px;
+.logo{
+    color:black;
 }
 
-.bannerku{
-    height: 550px;
-    width: 99%;
-    background-image: url(/assets/banner1.jpg);
-    background-size: cover;
-    margin:20px 0;
-}
-
-hr{
-    border-width: 2px;
-    margin:5px;
-}
-
-h2{
-    margin:5px  30px;
-}
-
-#b1{
-    border: 2px solid;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-}
-
-#profile-section > nav{
+nav {
     display: flex;
-    margin: 45px;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-#h52{
-    display: flex;
-    flex-direction: column;
-    height: 150px;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.border1{
-    background-image: url(/assets/PhotoProfile.png);
-    background-size: cover;
-}
-.border2{
-    background-image: url(/assets/reading.jpg);
-    background-size: cover;
-}
-.border3{
-    background-image: url(/assets/studying.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.border4{
-    background-image: url(/assets/music.avif);
-    background-size: cover;
-    background-position: center;
-}
-.border5{
-    background-image: url(/assets/sleeping.jpg);
-    background-size: cover;
-}
-
-#home-section > article{
-    text-align: center;
-    font-weight: bold;
-    font-size: 13px;
-    margin: 61px;
-}
-
-.photo-profile1{
-    width: 359px;
-    height: 600px;
-    border: 2px solid;
-    border-radius: 6%;
-    background-image: url(/assets/portofolioPFP.webp);
-    background-size: cover;
-    margin: 30px;
-}
-
-.container-portofolio{
-    height: 1128px;
-    width: 1500px;
-    border: 1px solid;
-    margin: 20px;
-    display: flex;
-}
-
-.teks-portofolio{
-    float:right;
-    margin:30px 0;
-}
-
-footer{
-    text-align: center;
-}
-
-fieldset{
-    width: 40%;
-    margin: 0 20px;
-    height: 329px;
-    display: flex;
-    flex-direction: column;
-}
-
-textarea{
-    display: flex;
-    height: 135px;
-    width: 337px;
-}
-
-fieldset > p{
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
     gap: 20px;
 }
 
-#message-section{
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 6px 14px;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width:600px) {
+    .header-main{
+        flex-direction: column;
+    }
+    
+    nav{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a{
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+}
+
+.bannerku{
+    background-image: url(/assets/forbannerku.avif);
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    position: relative;
+}
+
+@media only screen and (max-width:600px){
+    .bannerku{
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .bannerku{
+        height: 150px;
+    }
+}
+
+.text-for-user{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.portofolio-container{
+    text-align: center;
+}
+
+.logo2{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.sender-form1{
-    width: 40%;
-    border: 1px solid;
-    height: 337px;
-    margin-top: 6px;
-    margin-right: 20px;
+.profile-container{
+    border: 2px solid;
+    height: 500px;
+    width: 80%;
+    margin-top: 120px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sender-form1 > p {
-    margin-left: 20px;
-    margin-top: 20px;
+@media only screen and (max-width:600px) {
+
+    .profile-container{
+        margin-top: 50px;
+
+    }
+    
+}
+
+.logo-profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
 }

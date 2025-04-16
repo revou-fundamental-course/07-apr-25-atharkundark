@@ -126,3 +126,9 @@ html{
     display: flex;
     justify-content: center;
 }
+
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
